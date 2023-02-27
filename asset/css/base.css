@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@300;400;500&display=swap');
+:root{
+    --cl-pc: #FFDA7A;
+    --cl-sc: #FFFFFF;
+    --cl-body: #1A1A1A;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Fraunces', serif;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.list-style-none{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* heading */
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4 ,h5, h6{
+    font-family: 'Fraunces', serif;
+    margin: 0;
+}
+
+.h1{
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.h2{
+    font-size: 3.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.h3{
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.h4{
+}
+
+.h5{
+
+}
+
+.h6{
+    
+}
+
+/*  */
+.font-Fraunces{
+    font-family: 'Fraunces', serif;
+}
+
+.font-inter{
+    font-family: 'Inter', sans-serif;
+}
+/*  */
+
+/* text */
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.text-pc{
+    color: var(--cl-pc);
+}
+
+.text-sc{
+    color: var(--cl-sc);
+}
+/*  */
+
+/* position */
+.p-relative{
+    position: relative;
+}
+
+.p-absolute{
+    position: absolute;
+}
+/*  */
+
+/* btn */
+.btn{
+    line-height: 1.2;
+    font-size: 1.6rem;
+    border: solid 1px var(--cl-sc);
+    background-color: var(--cl-body);
+    color: var(--cl-sc);
+    font-weight: 400;
+}
+
+.btn--active{
+    color: var(--cl-body);
+    background-color: var(--cl-sc);
+}
+
+.btn__size{
+    padding: 12px 10.37px;   
+}
+
+
+.btn__pc{
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--cl-body);
+    background-color: var(--cl-pc);
+    padding: 12px 30px;   
+    border: none;
+}
+
+.btn--more{
+    padding: 12px 65.74px;
+    line-height: 1.6;
+    display: inline-block;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.btn__specifications{
+    padding: 12px 124.5px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+
+/*  */
+
+/* d-block */
+.d-block{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+/*  */
+
+/* border */
+.boder-r-50{
+    border-radius: 50%;
+}
+
+/* flex */
+.d-flex{
+    display: flex;
+}
+
+.align-end{
+    align-items: flex-end;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gap-0{
+    --gap:0;
+}
+    
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.flex-no-wrap{
+    flex-wrap: nowrap;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+/*  */
+
+/* width */
+.full-width{
+    width: 100%;
+}
+
+.full-height{
+    height: 100%;
+}
+/*  */
+
+/* img */
+.object-cover{
+    object-fit: cover;
+}
+
+/* transform center */
+.transfom-center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* box model */
+.p-0{
+    padding: 0;
+}
+
+.mg-0{
+    margin: 0;
+}
+
+.mg-center{
+    margin: 0 auto;
+}
+/*  */

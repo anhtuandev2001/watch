@@ -1,0 +1,74 @@
+/* 
+  cách chia col: 
+    col = (width element / width container x 100%) / (100%/12=8.33333%)
+*/
+
+:root{
+  --widthContainer: 1078px;
+  --gap: 16px;
+}
+
+.container {
+  max-width: calc(var(--widthContainer) + var(--gap) * 2);
+  margin: 0 auto;
+  padding-left: var(--gap);
+  padding-right: var(--gap);
+}
+
+.row {
+  margin-left: calc(-1 * var(--gap)/2);
+  margin-right: calc(-1 * var(--gap)/2);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  padding-left: calc(var(--gap)/2);
+  padding-right: calc(var(--gap)/2);
+}
+
+[style*= "--w-sm"]{
+  flex: 0 0 calc(100%/12 * var(--w-sm));
+  max-width: calc(100%/12 * var(--w-sm));
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  :root{
+  }
+  
+  [style*= "--w-md"]{
+    flex: 0 0 calc(100%/12 * var(--w-md));
+    max-width: calc(100%/12 * var(--w-md));
+  }
+}
+
+
+/* laptop */
+@media (min-width: 1024px) {
+  :root{
+    --gap: 40px;
+  }
+
+  [style*= "--w-lg"]{
+    flex: 0 0 calc(100%/12 * var(--w-lg));
+    max-width: calc(100%/12 * var(--w-lg));
+  }
+}
+
+
+
+/* desktop */
+@media (min-width: 568px) {
+  :root{
+
+  }
+  
+  [style*= "--w-xl"]{
+    flex: 0 0 calc(100%/12 * var(--w-xl));
+    max-width: calc(100%/12 * var(--w-xl));
+  }
+}
+
+
+
