@@ -70,6 +70,7 @@
 
 .introduce__content{
     margin-top: 16px;
+    line-height: 1.5;
 }
 /*  */
 
@@ -84,6 +85,11 @@
 
 .specifications__list{
     line-height: 1.5;
+    display: none;
+}
+
+.specifications__list--active{
+    display: block;
 }
 
 .specifications__img{
@@ -100,6 +106,11 @@
 .made__btn{
     margin-top: 40px;
 }
+
+.made__content{
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
 /*  */
 
 /* customers */
@@ -114,6 +125,10 @@
 
 .customers__span{
     padding-top: 10px;
+}
+
+.customers__text{
+    line-height: 1.7;
 }
 
 .customers__icon{
@@ -134,7 +149,7 @@
 .contact__reply{
     font-size: 1.4rem;
     line-height: 1.7;
-    margin-left: 15px;
+    margin:0 15px;
     margin-bottom: 28px;
     display: none;
 }
@@ -152,15 +167,18 @@
     width: 24px;
 }
 
-.contact__icon--active{
-    display: block;
+.contact__question--active{
 }
 
-.contact__icon.contact__icon--active .contact__plus{
+.contact__question.contact__question--active .contact__plus{
     display: none;
 }
 
-.contact__icon.contact__icon--active .contact__minus{
+.contact__question:hover{
+    cursor: pointer;
+}
+
+.contact__question.contact__question--active .contact__minus{
     display: block;
 }
 /* more*/
@@ -241,10 +259,7 @@
 
 /*  */
 /* box model */
-.made__content{
-    font-size: 2rem;
-    line-height: 1.5;
-}
+
 /*  */
 
 /* d-block */
